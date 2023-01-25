@@ -1,4 +1,5 @@
 import { createApp } from 'vue'
-import App from './App.vue'
+import LuqeysApp from './LuqeysApp.vue'
+import './assets/css/app.css'
 
-createApp(App).mount('#app')
+createApp(LuqeysApp).mount('#app')

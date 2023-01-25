@@ -1,0 +1,12 @@
+.add-new {
+    align-items: center;
+    
+}
+
+
+#app {
+    background-color: aliceblue;
+    text-align: center;
+    margin: auto;
+    padding: 50px;
+}
