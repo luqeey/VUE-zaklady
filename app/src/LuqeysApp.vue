@@ -1,8 +1,13 @@
 <template>
     <div>
         <ul>
+            <h1>TO-Do list</h1>
+            <p>napis co chces spravit</p>
             <li v-for="(dude, index) in characters" :key="index">
-            <Dude title="JA som lukas" />
+            <Dude title="-" :name="dude"/>
+            <App />
+            <!-- <AboutView />
+            <HomeView />  -->
             </li>
         </ul>
 
@@ -14,22 +19,28 @@
     {{ newDude }}
 </p>
 
-</div>
+    </div>
 </template>
 
 <script>
     import Dude from  './components/Dude.vue'
+    import App from '@/App.vue'
+    
     export default {
         components: {
             Dude,
+            App,
+            
         },
         data() {
             return {
                 newDude: '',
-                characters: ['Jake the dog', 'Finn the human', 'Marceline the vampire'],
-            }
+                characters: [],
+                
+            }   
         },
     }
+
 </script>
 
 <style lang="scss" scoped>

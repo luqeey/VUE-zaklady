@@ -11,11 +11,15 @@
 
 
 
-body {
+.body {
     background-color: aqua;
 }
 
 
-span {
+.span {
     
+}
+
+.add-new {
+    background-color: black;
 }
